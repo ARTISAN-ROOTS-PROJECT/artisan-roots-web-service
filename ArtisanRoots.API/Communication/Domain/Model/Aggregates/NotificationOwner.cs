@@ -11,7 +11,7 @@ public partial class NotificationOwner
 
     public string? Content { get; private set; }
 
-    public int? OwnersId { get; private set; }
+    public int OwnersId { get; private set; }
 
     public virtual Owner? Owners { get; set; } 
     

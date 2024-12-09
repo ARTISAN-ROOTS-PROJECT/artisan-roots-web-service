@@ -11,7 +11,7 @@ public partial class NotificationArtisan
 
     public string? Content { get; set; }
 
-    public int? ArtisansId { get; set; }
+    public int ArtisansId { get; set; }
 
     public virtual Artisan? Artisans { get; set; }
 

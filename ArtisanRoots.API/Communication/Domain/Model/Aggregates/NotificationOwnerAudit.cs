@@ -1,14 +1,11 @@
 ﻿using EntityFrameworkCore.CreatedUpdatedDate.Contracts;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ArtisanRoots.API.Communication.Domain.Model.Entities;
-   
+namespace ArtisanRoots.API.Communication.Domain.Model.Aggregates;
 
-public partial class NotificationArtisan : IEntityWithCreatedUpdatedDate
+public partial class NotificationOwner : IEntityWithCreatedUpdatedDate
 {
     [Column("CreatedAt")] public DateTimeOffset? CreatedDate { get; set; }
 
     [Column("UpdatedAt")] public DateTimeOffset? UpdatedDate { get; set; }
-    
 }
-

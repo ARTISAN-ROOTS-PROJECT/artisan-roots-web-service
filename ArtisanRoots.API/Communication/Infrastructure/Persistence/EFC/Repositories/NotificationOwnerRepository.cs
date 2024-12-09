@@ -10,8 +10,6 @@ namespace ArtisanRoots.API.Communication.Infrastructure.Persistence.EFC.Reposito
 public class NotificationOwnerRepository(ArtisanRootsContext context) : BaseRepository<NotificationOwner>(context), 
     INotificationOwnerRepository
 {
-    public async Task<IEnumerable<NotificationOwner>> Handle(GetAllNotificationsQuery query)
-     => await Context.Set<NotificationOwner>().ToListAsync();
 
 }
 

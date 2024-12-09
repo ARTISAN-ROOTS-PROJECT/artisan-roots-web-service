@@ -35,6 +35,7 @@
     <Folder Include="Commerce\Domain\Services\" />
     <Folder Include="Commerce\Infrastructure\" />
     <Folder Include="Commerce\Interfaces\" />
+    <Folder Include="Communication\Domain\Model\Entities\" />
     <Folder Include="IAM\Application\Internal\CommandServices\" />
     <Folder Include="IAM\Application\Internal\QueryServices\" />
     <Folder Include="IAM\Application\Internal\OutboundServices\" />

@@ -18,7 +18,7 @@ public class NotificationController(INotificationArtisanCommandService notificat
     INotificationOwnerCommandService notificationOwnerCommandService, INotificationArtisanQueryService notificationArtisanQueryService,
     INotificationOwnerQueryService notificationOwnerQueryService) : ControllerBase
 {
-    [HttpPost]
+    [HttpPost("create-notification-artisan")]
     [SwaggerOperation(
         Summary = "Creates a new Notification Artisan",
         Description = "Creates a new Notification Artisan with given attributes",
@@ -41,7 +41,7 @@ public class NotificationController(INotificationArtisanCommandService notificat
         }
     }
 
-    [HttpGet]
+    [HttpGet("get-all-notification-artisans")]
     [SwaggerOperation(
         Summary = "Get All Notification Artisans",
         Description = "Get All Notifications Artisans without parameters",
@@ -63,7 +63,7 @@ public class NotificationController(INotificationArtisanCommandService notificat
         }
     }
 
-    [HttpPost]
+    [HttpPost("create-notification-owner")]
     [SwaggerOperation(
         Summary = "Create Notification Owner",
         Description = "Create notification owner with the given parameters",
@@ -86,7 +86,7 @@ public class NotificationController(INotificationArtisanCommandService notificat
         }
     }
 
-    [HttpGet]
+    [HttpGet("get-all-notification-owner")]
     [SwaggerOperation(
         Summary = "Get All Notification Owners",
         Description = "Get All Notifications Owners with the given parameters",

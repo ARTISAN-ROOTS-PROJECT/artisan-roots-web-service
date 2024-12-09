@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFrameworkCore.CreatedUpdatedDate" Version="8.0.0" />
+    <PackageReference Include="Humanizer.Core" Version="2.14.1" />
+    <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commerce\Application\Internal\CommandServices\" />
+    <Folder Include="Commerce\Application\Internal\QueryServices\" />
+    <Folder Include="Commerce\Application\Internal\OutboundServices\" />
+    <Folder Include="Commerce\Domain\Model\Commands\" />
+    <Folder Include="Commerce\Domain\Model\Exceptions\" />
+    <Folder Include="Commerce\Domain\Model\ValueObjects\" />
+    <Folder Include="Commerce\Domain\Model\Queries\" />
+    <Folder Include="Commerce\Domain\Repositories\" />
+    <Folder Include="Commerce\Domain\Services\" />
+    <Folder Include="Commerce\Infrastructure\" />
+    <Folder Include="Commerce\Interfaces\" />
+    <Folder Include="Communication\Application\Internal\QueryServices\" />
+    <Folder Include="Communication\Application\Internal\OutboundServices\" />
+    <Folder Include="Communication\Interfaces\" />
+    <Folder Include="IAM\Application\Internal\CommandServices\" />
+    <Folder Include="IAM\Application\Internal\QueryServices\" />
+    <Folder Include="IAM\Application\Internal\OutboundServices\" />
+    <Folder Include="IAM\Domain\Model\Commands\" />
+    <Folder Include="IAM\Domain\Model\Exceptions\" />
+    <Folder Include="IAM\Domain\Model\ValueObjects\" />
+    <Folder Include="IAM\Domain\Model\Queries\" />
+    <Folder Include="IAM\Domain\Services\" />
+    <Folder Include="IAM\Domain\Repositories\" />
+    <Folder Include="IAM\Infrastructure\" />
+    <Folder Include="IAM\Interfaces\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

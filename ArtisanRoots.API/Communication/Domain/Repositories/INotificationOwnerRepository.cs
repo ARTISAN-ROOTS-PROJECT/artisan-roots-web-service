@@ -5,8 +5,7 @@ using ArtisanRoots.API.Shared.Domain.Repositories;
 namespace ArtisanRoots.API.Communication.Domain.Repositories;
 
 public interface INotificationOwnerRepository : IBaseRepository<NotificationOwner>
-{
-    Task<IEnumerable<NotificationOwner>> Handle(GetAllNotificationsQuery query);
+{ 
 
 }
 

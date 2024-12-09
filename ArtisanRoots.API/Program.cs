@@ -1,3 +1,9 @@
+using ArtisanRoots.API.Communication.Application.Internal.CommandServices;
+using ArtisanRoots.API.Communication.Application.Internal.QueryServices;
+using ArtisanRoots.API.Communication.Domain.Repositories;
+using ArtisanRoots.API.Communication.Domain.Services.CommandServices;
+using ArtisanRoots.API.Communication.Domain.Services.QueryServices;
+using ArtisanRoots.API.Communication.Infrastructure.Persistence.EFC.Repositories;
 using ArtisanRoots.API.Shared.Domain.Repositories;
 using ArtisanRoots.API.Shared.Infrastructure.Interfaces.ASP.Configuration;
 using ArtisanRoots.API.Shared.Infrastructure.Persistence.EFC.Configuration;
@@ -111,6 +117,18 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
 // COMMUNICATION BOUNDED CONTEXT
+
+builder.Services.AddScoped<INotificationArtisanCommandService, NotificationArtisanCommandService>();
+
+builder.Services.AddScoped<INotificationOwnerCommandService, NotificationOwnerCommandService>();
+
+builder.Services.AddScoped<INotificationArtisanQueryService, NotificationArtisanQueryService>();
+
+builder.Services.AddScoped<INotificationOwnerQueryService, NotificationOwnerQueryService>();
+
+builder.Services.AddScoped<INotificationArtisanRepository, NotificationArtisanRepository>();
+
+builder.Services.AddScoped<INotificationOwnerRepository, NotificationOwnerRepository>();
 
 // COMMERCE BOUNDED CONTEXT
 
